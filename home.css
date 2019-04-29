@@ -1,16 +1,21 @@
 body {
   background-color: slategray;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
-  padding: 0px;
-  margin: 50px;
+  padding: 0;
+  margin: 0% 5% 2%;
   text-align: center;
   position: relative;
   overflow-x: hidden;
 }
 
+img, embed, object {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 #slideshow-container {
-  width: 700px;
-  height: 600px;
+  width:700px;
+  height:600px;
   padding: 0;
   position: relative;
   margin: 0 auto;
@@ -20,9 +25,9 @@ body {
 }
 
 #slideshow-container> img{
- width:100%;
- height:100%;
-   position: absolute;
+  width: 100%;
+  height: 100%;
+ position: absolute;
  }
 
 #slideshow-container> .btn{
@@ -30,9 +35,9 @@ body {
   width: 40px;
   height: 40px;
   border: none;
-  font-size: 18px;
+  font-size: 1em;
   border-radius: 25px;
-  top: 300px;
+  top: 50%;
   margin: 2px;
   background: black;
   color: whitesmoke;
@@ -50,12 +55,10 @@ body {
   float: left;
 }
 
-
 .slides {
-  width=100%;
   display: none;
+  width: 100%;
   position: absolute;
- 
 }
 
 .button {
@@ -63,25 +66,25 @@ body {
   position: relative;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 1% 1%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  margin: 4px 2px;
+  margin: 1% 1%;
   cursor: pointer;
-  bottom: 10px;
+  bottom: 1%;
 }
 
 .text {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.7em;
   position: absolute;
   width: 100%;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
-  padding: 5px 5px;
-  bottom: -58px;
+  padding: 1% 1%;
+  bottom: -10%;
   color: black;
   font-weight: bold;
   background-color: slategray;
@@ -90,6 +93,7 @@ body {
 .profilepic{
   border: 5px solid whitesmoke;
   border-radius: 50%;
+  max-width: 100%;
 }
 
 .fade {
@@ -106,14 +110,14 @@ body {
   }
 }
 
-.active,
-.dots:hover {
+.active {
   background: black;
 }
+
 h1 {
   text-align: center;
   color: #a80348 ;
-  font-size: 60px;
+  font-size: 4em;
   font-weight: bold;
   background: whitesmoke;
 }
@@ -121,12 +125,13 @@ h1 {
 h2 {
   text-align: center;
   color: #a80348;
-  font-size: 25px;
+  font-size: 1.7em;
   
 }
 
 p {
   text-align: center;
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 1em;
 }
+

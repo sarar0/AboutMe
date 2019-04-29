@@ -1,21 +1,132 @@
 body {
   background-color: slategray;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 50px;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
 }
 
+#slideshow-container {
+  width: 700px;
+  height: 600px;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 7px solid black;
+ 
+}
+
+#slideshow-container> img{
+ width:100%;
+ height:100%;
+   position: absolute;
+ }
+
+#slideshow-container> .btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  border-radius: 25px;
+  top: 300px;
+  margin: 2px;
+  background: black;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+  
+#slideshow-container> #next{
+  position: relative;
+  float: right;
+}
+
+#slideshow-container> #prev{
+  position: relative;
+  float: left;
+}
+
+
+.slides {
+  width=100%;
+  display: none;
+  position: absolute;
+ 
+}
+
+.button {
+  background-color: whitesmoke;
+  position: relative;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10px;
+}
+
+.text {
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 5px 5px;
+  bottom: -58px;
+  color: black;
+  font-weight: bold;
+  background-color: slategray;
+}
+
+.profilepic{
+  border: 5px solid whitesmoke;
+  border-radius: 50%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.active,
+.dots:hover {
+  background: black;
+}
 h1 {
-    text-align: center;
-    color:#a80348;
-  }
-  
-  h2 {
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  p {
-    text-align: center;
-    color: whitesmoke;
-  }
+  text-align: center;
+  color: #a80348 ;
+  font-size: 60px;
+  font-weight: bold;
+  background: whitesmoke;
+}
 
+h2 {
+  text-align: center;
+  color: #a80348;
+  font-size: 25px;
+  
+}
 
+p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 18px;
+}

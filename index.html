@@ -2,56 +2,64 @@
 <html>
 
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script type="text/javascript" src="home.js"></script>
-<link rel="stylesheet" type="text/css" href="home.css">
+  <title>About me </title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script type="text/javascript" src="home.js"></script>
+  <link rel="stylesheet" type="text/css" href="home.css">
 </head>
+
 <body>
 
-<h1>Sara Rancati</h1>
-<p> [insert photo]</p>
+  <h1>Sara Rancati</h1>
 
-<h2>A bit about me:</h2>
-<p> [Read more]</p>
+  <div><img class="profilepic" src="https://raw.githubusercontent.com/sarar0/aboutme/style/images/profile.png" width="200"></div>
 
-<h2>Why coding?</h2>
-<p> [Read more]</p>
+  <h2>A bit about me:</h2>
+  <p> My name is Sara. I am Italian, from a small town close to Milan, but I am a bit Australian too. I moved to Sydney to complete my studies and lived there for almost eight years. Work then took me back to Italy (Rome), then UK, Switzerland and then back
+    here in London. I love travelling, marine turtles and interior design. I have mainly worked for international not-for-profit organisations and my professional background is in Human Resources, more specifically HR policies. </p>
 
- <h2>A few photos from the places I have called home:</h2>
- <p> [Slideshow]</p>
+  <h2>Why coding?</h2>
+  <p> After working in HR for the past eight years, I am looking for a complete career change - that is why I am taking my first steps into the world of coding and web development. The reason why I choose this path is that I believe this is a discipline that
+    requires a methodical, analytical way of thinking - and patience too - and that can be very rewarding when you are able to create something from start to finish and take full ownership of projects. This is exactly what I want from my next job.</p>
 
+  <h2>A few photos from the places I have called home:</h2>
 
-<!-- Container for the image gallery -->
-<div class="container">
-
-    <div class="mySlides">
-        <img src="images/geneva.jpg" style="width:50%">
-    </div>
-  
-    <div class="mySlides">
-        <img src="images/pizzino.jpg" style="width:50%">
-    </div>
-  
-    <div class="mySlides">
-        <img src="images/london.jpg" style="width:50%">
+  <div id="slideshow-container">
+    <div class="slides fade">
+      <div><img src="https://raw.githubusercontent.com/sarar0/aboutme/style/images/london.jpg" width="700"></div>
+      <div class="text"> London </div>
     </div>
 
-    <div class="mySlides">
-        <img src="images/rome.jpg" style="width:50%">
+    <div class="slides fade">
+      <div><img src="https://raw.githubusercontent.com/sarar0/aboutme/style/images/pizzino.jpg" width="700"></div>
+      <div class="text"> Northern Italy </div>
     </div>
 
-    <div class="mySlides">
-        <img src="images/sydney.jpg" style="width:50%">
+    <div class="slides fade">
+      <div><img src="https://raw.githubusercontent.com/sarar0/aboutme/style/images/sydney2.jpg" width="700"></div>
+      <div class="text"> Sydney </div>
     </div>
 
-<h2>Links:</h2>
-<p> [insert buttons]
-    Freecodecamp
-    GitHub
-    Codewars
-    Email
-</p>
+    <div class="slides fade">
+      <div><img src="https://raw.githubusercontent.com/sarar0/aboutme/style/images/geneva.jpg" width="700"></div>
+      <div class="text"> Geneva </div>
+    </div>
 
+    <div class="slides fade">
+      <div><img src="https://raw.githubusercontent.com/sarar0/aboutme/style/images/rome.jpg" width="700"></div>
+      <div class="text"> Rome </div>
+    </div>
+    <button class="btn" onclick="plusSlides(-1)" id="prev">&#10094;</button>
+    <button class="btn" onclick="plusSlides(+1)" id="next">&#10095;</button>
+  </div>
+  <br/>
+
+  <h2>Links:</h2>
+  <input class="button" type="button" onclick="window.open('https://www.freecodecamp.org/sarar0')" value="FreeCodeCamp" />
+  <input class="button" type="button" onclick="window.open('https://www.codewars.com/users/sarar0')" value="Codewars" />
+  <input class="button" type="button" onclick="window.open('https://github.com/sarar0')" value="GitHub" />
+  <input class="button" type="button" onclick="window.open('https://gitter.im/sarar0')" value="Gitter" />
 
 </body>
+
 </html>
